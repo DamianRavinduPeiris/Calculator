@@ -1,0 +1,17 @@
+
+.tfContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+#textField{
+    width: 60vw;
+    margin-top: 20vh;
+
+}
+#clearButton{
+    margin-top: 20vh;
+    margin-left: 3vw;
+    height: auto;
+}
