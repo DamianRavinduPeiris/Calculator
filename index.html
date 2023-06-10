@@ -16,17 +16,101 @@
     <script crossorigin="anonymous"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!--Animate.style.👇-->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            rel="stylesheet"
+    />
+    <!--FontAwesome.👇-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<!--Google Fonts.👇-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 <body>
-<div class="tfContainer">
+<h1 class="heading animate__animated animate__bounce"><mark>A simple calculator built with JavaScript.✨</mark></h1>
+<div class="tfContainer animate__animated animate__bounce">
     <div class="mb-3">
         <input class="form-control" id="textField" type="text">
-
-
     </div>
-    <button class="btn btn-light" type="button" id="clearButton">Clear.</button>
+    <button class="btn btn-light" id="clearButton" type="button">Clear.</button>
 </div>
+<div class="buttonContainer animate__animated animate__bounce">
+    <button class="btn btn-dark numberButtons" onclick="setValue(7)" type="button">7</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue(8)" type="button">8</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue(9)" type="button">9</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue('+')" type="button">+</button>
+</div>
+<div class="buttonContainer animate__animated animate__bounce">
+    <button class="btn btn-dark numberButtons" onclick="setValue(4)" type="button">4</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue(5)" type="button">5</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue(6)" type="button">6</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue('-')" type="button">-</button>
+</div>
+<div class="buttonContainer animate__animated animate__bounce">
+    <button class="btn btn-dark numberButtons" onclick="setValue(1)" type="button">1</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue(2)" type="button">2</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue(3)" type="button">3</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue('/')" type="button">/</button>
+</div>
+<div class="buttonContainer animate__animated animate__bounce">
+    <button class="btn btn-dark numberButtons" onclick="setValue(0)" type="button">0</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue('.')" type="button">.</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue('=')" type="button">=</button>
+    <button class="btn btn-dark numberButtons" onclick="setValue('*')" type="button">*</button>
+</div>
+<!--Footer.👇-->
+<div class="myFooter" data-aos="zoom-in">
+    <footer class="bg-dark text-center text-white">
+
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/DamianRavinduPeiris"   target=_blank  role="button"
+                ><i class="fa fa-github"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://stackoverflow.com/users/19215399/damian-peiris" target=_blank role="button"
+                ><i class="fa fa-stack-overflow"></i
+                ></a>
+
+
+
+                <!-- LinkedIn. -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/damianpeiris/" target=_blank role="button"
+                ><i class="fa fa-linkedin"></i
+                ></a>
+
+
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/damian.peiris" role="button"
+                ><i class="fa fa-instagram"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/damianlka" target=_blank role="button"
+                ><i class="fa fa-twitter"></i
+                ></a>
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 commonText" style="background-color: rgba(0, 0, 0, 0.2);">
+            Made with 💖by Damian.<br> <br>
+            Damian Peiris. © 2023 All Rights Reserved.
+        </div>
+        <!-- Copyright -->
+    </footer>
+</div>
+
+
+
 
 <script src="index.js"></script>
 </body>
